@@ -1,37 +1,54 @@
-# 🌳 Architektur — atc-atclang-wiki
+# ARCHITECTURE.md — atc-atclang
+> Copyright © Michael Wroblewski / A-TownChain-Okosystems. All Rights Reserved.
 
-> **Stand:** 2026-08-06 | **Commit:** 9c1ad08
-> **Teil von:** [A-TownChain Ökosystem](https://github.com/A-TownChain-Okosystems)
-
-## Statistik
-
-| Metrik | Wert |
-|--------|------|
-| Dateien | 12 |
-| Zeilen | 305 |
-| .atc | 0 |
-| .py | 0 |
-| .rs | 0 |
-| .ts/.tsx | 0 |
-| .md | 10 |
-
-## Verzeichnisstruktur
-
-```
-├── docs/ (4 files, 200 lines)
-│   ├── API.md (79 lines)
-│   ├── ARCHITECTURE.md (60 lines)
-│   ├── MODULES.md (38 lines)
-│   └── ROADMAP.md (23 lines)
+## File Tree
+```tree
 ├── .gitignore
-├── ARCHITECTURE.md (14 lines)
-├── FILE_REGISTER.md (16 lines)
+├── ATCLANG_SPEC.md
+├── CHANGELOG.md
+├── COMPONENT_PLAN.md
+├── CONTRIBUTING.md
+├── FILE_REGISTER.md
 ├── LICENSE
-├── MODULES.md (10 lines)
-├── README.md (24 lines)
-├── ROADMAP.md (8 lines)
-└── STATUS.md (33 lines)
+├── README.md
+├── ROADMAP.md
+├── STATUS.md
+├── __init__.py
+├── compiler/
+│   └── __init__.py
+├── lexer/
+│   └── __init__.py
+├── parser/
+│   ├── __init__.py
+│   └── parser.py
+├── programs/
+│   └── atcos_main.atc
+├── repl/
+│   └── __init__.py
+├── requirements.txt
+├── stdlib/
+│   ├── __init__.py
+│   ├── chain.py
+│   ├── encoding.py
+│   ├── io.py
+│   └── wallet.py
+├── tests/
+├── v03/
+│   ├── __init__.py
+│   └── atclang_v03_features.py
+└── vm/
+    └── __init__.py
 ```
 
----
-*Auto-generiert 2026-08-06 · Aurora (MasterBrain · Base44)*
+## Module Descriptions
+- **lexer/**: Lexical analyzer module converting raw ATC source code into a token stream.
+- **parser/**: Syntactic parser building an Abstract Syntax Tree (AST) from token sequences.
+- **compiler/**: ATC compiler target translating AST into bytecode and optimized execution instructions.
+- **tests/**: Test suite validating language grammar rules, parser edge cases, and compiler outputs.
+- **stdlib/** & **vm/**: Standard library utilities and lightweight virtual machine runtime for executing compiled ATC bytecode.
+
+## Build System
+Python setuptools packaging framework (`pyproject.toml`). Test execution managed via `pytest`.
+
+## Dependencies
+Python 3.10+, `pytest`, `ply` / `sly` parsing toolkits, AST visualization and processing tools.
