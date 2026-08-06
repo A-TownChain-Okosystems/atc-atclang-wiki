@@ -59,8 +59,18 @@
 | 48 | `boot()` | Bool | `programs/atcos_main.atc` | ATCLang |
 | 49 | `status()` | Map | `programs/atcos_main.atc` | ATCLang |
 | 50 | `name()` | String | `programs/atcos_main.atc` | ATCLang |
+| 51 | `stop()` | Bool | `programs/atcos_main.atc` | ATCLang |
+| 52 | `boot()` | Bool | `programs/atcos_main.atc` | ATCLang |
+| 53 | `mint()` | Bool | `programs/atcos_main.atc` | ATCLang |
+| 54 | `burn()` | Bool | `programs/atcos_main.atc` | ATCLang |
+| 55 | `transfer()` | Bool | `programs/atcos_main.atc` | ATCLang |
+| 56 | `approve()` | Bool | `programs/atcos_main.atc` | ATCLang |
+| 57 | `transfer_from()` | Bool | `programs/atcos_main.atc` | ATCLang |
+| 58 | `balance_of()` | UInt256 | `programs/atcos_main.atc` | ATCLang |
+| 59 | `total_supply()` | UInt256 | `programs/atcos_main.atc` | ATCLang |
+| 60 | `status()` | Map | `programs/atcos_main.atc` | ATCLang |
 
-*+499 weitere Funktionen*
+*+489 weitere*
 
 **Total: 549 Funktionen**
 

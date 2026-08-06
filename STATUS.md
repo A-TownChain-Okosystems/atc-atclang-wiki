@@ -7,7 +7,7 @@
 
 ## Aktueller Stand
 
-**Status:** 🟢 AKTIV — In Entwicklung
+**Status:** 🟢 AKTIV
 **Fortschritt:** 50%
 
 ## Metriken
@@ -20,8 +20,6 @@
 | Rust (.rs) | 0 |
 | TypeScript (.ts) | 0 |
 | Total Zeilen | 8,605 |
-| Tests | 0 |
-| Stubs/TODOs | 0 |
 
 ## Nächste Schritte
 
