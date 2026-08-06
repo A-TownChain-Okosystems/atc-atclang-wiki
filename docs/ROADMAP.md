@@ -1,22 +1,23 @@
-# 🗺️ ATCLang Modular System Roadmap
+# 🗺️ Roadmap — atc-atclang
 
-> **Repository:** [atc-atclang](https://github.com/A-TownChain-Okosystems/atc-atclang)  
-> **Stand:** 2026-08-05  
+> **Repo:** [atc-atclang](https://github.com/A-TownChain-Okosystems/atc-atclang)
+> **Layer:** L2-L4 | **Stand:** 2026-08-06
 
 ---
 
-## 🎯 Phase 1: v0.3.0 Stabilization (Aktuell)
-- [x] Integration des statischen TypeCheckers
-- [x] AST-Optimizer mit Constant Folding
-- [x] Erweiterung der Standardbibliothek (`crypto_ext`, `collections_ext`, `io_ext`)
-- [x] Durchsetzung der ATC-99 First Policy in allen Modulen
+## Sprint-Zuordnung
 
-## 🎯 Phase 2: Native Code Emission (Q3/2026)
-- [ ] LLVM-IR / WebAssembly Compiler Target Backend
-- [ ] JIT-Compilation (Just-In-Time) für hochfrequente ATVM Loops
-- [ ] Verbesserte Debugging-Symbole und Source-Mapping Support
+| Sprint | Phase | Status | Aufgaben |
+|--------|-------|--------|----------|
+| 2.1 | Compiler | Aktiv | — |
+| 2.5 | VM+Contracts | Geplant | — |
 
-## 🎯 Phase 3: Ecosystem Consolidation (Q4/2026)
-- [ ] Nahtlose Integration mit `atc-atcpkg` Paket-Registrierung
-- [ ] Automatisierte Benchmarking Suite für Gas- & Speicherverbrauch
-- [ ] Vollsyntaktisches LSP (Language Server Protocol) für ATCLang IDEs
+## Meilensteine
+
+1. **v0.3** — ATCLang Parser stabil, Basis-Module migriert
+2. **v0.4** — Struct-Inheritance, Kernel-Support, VM Opcodes
+3. **v1.0** — Vollständige Implementierung, Test-Abdeckung >80%
+
+---
+
+*Auto-generiert 2026-08-06 · Aurora (MasterBrain · Base44)*
